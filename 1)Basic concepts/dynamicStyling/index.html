@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Dynamic Styling</h1>
+    </header>
+    <section id="styling">
+      <!--1)Binding inline styles: -->
+      <div class="demo" :style="{borderColor: demoA ? 'red' : ''}" @click="setA">1</div>
+      <!--2)Binding classes: -->
+      <div :class="demoB ? 'demo active' : 'demo'" @click="setB">2</div>
+      <!--SHORTCUTS SYNTAX:
+        - binding classes:
+            :class="demoB ? 'demo active' : 'demo'"
+          ==>
+            :class="{demo: true, active: demoB}"
+          ==>
+            class="demo"
+            :class="{active: demoB}"
+          ==>
+            :class="['demo', {active: demoB}]"
+       -->
+      <!--3)Binding classes from computed properties: -->
+      <div class="demo" :class="demoBClass" @click="setC">3</div>
+    </section>
+  </body>
+</html>

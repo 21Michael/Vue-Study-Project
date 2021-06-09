@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section id="assignment">
+      <!-- 1) Output data: interpolation syntax -->
+        <!-- 1.1) data: -->
+        <h2>{{ name }}</h2>
+        <!-- 1.2) methods:
+          BAD WAY: <h2>{{ getFullName() }}</h2>
+          SOLUTION: <h2>{{ fullName }}</h2> (*These methods threaded like properties (don't call it like methods:  ̶g̶e̶t̶F̶u̶l̶l̶N̶a̶m̶e̶(̶)̶ -> fullName))
+        -->
+        <h2>{{ fullName }}</h2>
+      <!-- 2) Output data: binding syntax -->
+        <!-- 2.1) data: -->
+        <a v-bind:href="link"> Link1 </a>
+        <!-- 2.2) methods:
+          BAD WAY: v-bind:href="getLink()
+          SOLUTION: v-bind:href="link"
+        -->
+        <a v-bind:href="link"> <br/>Link2 </a>
+      <!-- 3) Output data: html syntax -->
+      <div v-html="htmlData"></div>
+      <!--4)SHORTCUTS:
+        - data-binding:
+            v-bind:href="link"
+          ==>:
+            :href="link"
+      -->
+      <a :href="link"> Link3 </a>
+    </section>
+  </body>
+</html>
