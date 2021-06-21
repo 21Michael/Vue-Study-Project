@@ -77,3 +77,6 @@ Studying the Vue.js framework
     - custom hooks;
     - advantages;
 
+**8)Vue Apollo graphql:**
+    - query;
+    - mixin;
