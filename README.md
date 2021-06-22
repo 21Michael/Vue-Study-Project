@@ -1,7 +1,7 @@
 # Vue-Study-Project
 Studying the Vue.js framework
 
-**1)Basic concepts:**
+**1) Basic concepts:**
     - data-binding;
     - v-bind;
     - methods;
@@ -21,7 +21,7 @@ Studying the Vue.js framework
     - refs; !!!
     - lifecycle; !!!
 
-**2)Components:**
+**2) Components:**
     - props;
     - behaviour, changing, validation props;
     - custom events;
@@ -33,7 +33,7 @@ Studying the Vue.js framework
     - teleporting components;
     - fragments;
 
-**3)Routers:**
+**3) Routers:**
     - routers;
     - router-link;
     - styling links;
@@ -47,7 +47,7 @@ Studying the Vue.js framework
     - scroll behaviour;
     - afterEach;
 
-**4)Vuex:**
+**4) Vuex:**
     - store;
     - connecting & setup;
     - mutations;
@@ -57,7 +57,7 @@ Studying the Vue.js framework
     - mappers;
     - modules structure;
 
-**5)Composition API:**
+**5) Composition API:**
     - data -> refs();
     - data -> reactive();
     - methods -> regular functions;
@@ -68,15 +68,15 @@ Studying the Vue.js framework
     - provide, inject;
     - lifecycle hooks;
 
-**6)Options API (mixins):**
+**6) Options API (mixins):**
     - mixins;
     - global mixins;
     - disadvantages;
 
-**7)Composition API (hooks):**
+**7) Composition API (hooks):**
     - custom hooks;
     - advantages;
 
-**8)Vue Apollo graphql:**
+**8) Vue Apollo graphql:**
     - query;
     - mixin;
